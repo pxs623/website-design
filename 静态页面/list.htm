@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>列表页面</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script>
+      $(function(){
+        $('#StoreTab a').click(function (e) {
+          e.preventDefault()
+          $(this).tab('show')
+        })
+
+      })
+    </script>
+
+  </head>
+  <body>
+    <div id="top" class="index container-fluid">
+      <div class="con container">
+        <a href="javascript:;" class="visible-xs-block"><i class="fa fa-reorder"></i></a>
+        <ul class="list-inline hidden-xs">
+          <li><a href="default.htm">主站</a></li>
+          <li><a href="index.htm">分站首页</a></li>
+          <li><a href="">商铺转让</a></li>
+          <li><a href="">商铺租售</a></li>
+          <li><a href="">写字楼</a></li>
+          <li><a href="">厂房仓库</a></li>
+          <li><a href="">求租求购</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="header" class="index container-fluid">
+      <div class="con container">
+        <div class="row">
+          <div class="col-md-8 col-lg-8">
+            <a href="default.htm" title="南京腾铺" class="logo"><img src="img/default-logo.jpg"/></a>
+            <div class="dropdown area">
+              <button class="btn btn-default dropdown-toggle btn-lg" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                南京
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">杭州</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">成都</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">无锡</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">北京</a></li>
+              </ul>
+            </div>
+            <div class="input-group input-group-lg search">
+              <input type="text" class="form-control">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+              </span>
+            </div>
+          </div>
+          <div class="text-right col-md-4 col-lg-4">
+            <a href="" class="btn btn-default">免费发布信息</a>
+            <a href="" class="btn btn-theme-line">登录</a>
+            <a href="register.htm" class="btn btn-link">注册</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Nav tabs -->
+    <div class="list-tab container-fluid" id="StoreTab">
+      <ul class="nav container" role="tablist">
+        <li role="presentation" class="active"><a href="#attorn" role="tab" data-toggle="tab">商铺转让</a></li>
+        <li role="presentation"><a href="#sale" role="tab" data-toggle="tab">商铺租售</a></li>
+        <li role="presentation"><a href="#want" role="tab" data-toggle="tab">求租求购</a></li>
+      </ul>
+    </div>
+
+
+    <!-- Tab panes -->
+    <div class="tab-content container">
+      <div role="tabpanel" class="tab-pane active" id="attorn">
+        <div class="list-type">
+          <dl class="dl-horizontal">
+            <dt>区域：</dt>
+            <dd>
+              <div class="sel-tab" id="area">
+                <ul class="nav nav-tabs" role="tablist">
+                  <li role="presentation" class="active"><a href="#areaAll" role="tab" data-toggle="tab">区域不限</a></li>
+                  <li role="presentation"><a href="#ward" role="tab" data-toggle="tab">行政区</a></li>
+                  <li role="presentation"><a href="#line" role="tab" data-toggle="tab">地铁线</a></li>
+                  <li role="presentation"><a href="#business" role="tab" data-toggle="tab">商圈</a></li>
+                </ul>
+              </div>
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane" id="areaAll"></div>
+                <div role="tabpanel" class="tab-pane" id="ward">
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 玄武区<small>(32)</small>
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 鼓楼区<small>(51)</small>
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 建邺区<small>(32)</small>
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 白下区<small>(3)</small>
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 秦淮区<small>(32)</small>
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 下关区<small>(32)</small>
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 雨花台区<small>(32)</small>
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 浦口区<small>(32)</small>
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 栖霞区<small>(32)</small>
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 江宁区<small>(32)</small>
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 六合区<small>(32)</small>
+                  </label>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="line">...</div>
+                <div role="tabpanel" class="tab-pane" id="business">...</div>
+              </div>
+            </dd>
+          </dl>
+          <dl class="dl-horizontal">
+            <dt>行业：</dt>
+            <dd>
+              <a href="javascript:;">行业不限</a>
+              <div class="con">
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 酒楼餐饮<small>(32)</small>
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 美容美发<small>(51)</small>
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 服饰鞋包<small>(32)</small>
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 专柜转让<small>(3)</small>
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 休闲娱乐<small>(32)</small>
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 百货超市<small>(32)</small>
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 生活服务<small>(32)</small>
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 电子通讯<small>(32)</small>
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 汽修美容<small>(32)</small>
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 医药保健<small>(32)</small>
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 家居建材<small>(32)</small>
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 教育培训<small>(32)</small>
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 旅馆宾馆<small>(32)</small>
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 公司工厂<small>(32)</small>
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 其他<small>(32)</small>
+                </label>
+              </div>
+            </dd>
+          </dl>
+          <dl class="dl-horizontal">
+            <dt>类型：</dt>
+            <dd>
+              <a href="javascript:;">类型不限</a>
+              <div class="con">
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 商业街卖场<small>(32)</small>
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 写字楼配套<small>(51)</small>
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 住宅底商<small>(32)</small>
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 摊位柜台<small>(3)</small>
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 其他<small>(32)</small>
+                </label>
+              </div>              
+            </dd>
+          </dl>
+        </div>
+        <div class="list-seleced">
+          <div class="con">
+            <!--如果没有筛选条件，以下内容直接移除，不要设置为 display:none><-->
+            <small>您已选择</small>
+            <a href="javascript:;" class="label label-theme">鼓楼区<span>╳</span></a>
+            <a href="javascript:;" class="label label-theme">建邺区<span>╳</span></a>
+            <a href="javascript:;" class="label label-theme">美容美发<span>╳</span></a>
+            <a href="javascript:;" class="label label-theme">商业街卖场<span>╳</span></a>
+            <a href="javascript:;" class="label label-theme">鼓楼区<span>╳</span></a>
+            <a href="javascript:;" class="label label-theme">建邺区<span>╳</span></a>
+            <a href="javascript:;" class="label label-theme">鼓楼区<span>╳</span></a>
+            <a href="javascript:;" class="label label-theme">建邺区<span>╳</span></a>
+            <a href="javascript:;" class="label label-theme">美容美发<span>╳</span></a>
+            <a href="javascript:;" class="label label-theme">商业街卖场<span>╳</span></a>
+            <!--如果没有筛选条件，以上内容直接移除 end><-->
+            <div class="other">
+              <label for="empty" class="checkbox-inline"><input type="checkbox" id="empty" value="empty"/> 空转</label>
+              <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                  租金费由低到高 <span class="fa fa-long-arrow-up"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                  <li><a href="#">默认最新发布的</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">租金费由高到低 <span class="fa fa-long-arrow-down"></span></a></li>
+                  <li><a href="#">转让费由低到高 <span class="fa fa-long-arrow-up"></span></a></li>
+                  <li><a href="#">转让费由高到低 <span class="fa fa-long-arrow-down"></span></a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">总面积由小到大 <span class="fa fa-long-arrow-up"></span></a></li>
+                  <li><a href="#">总面积由大到小 <span class="fa fa-long-arrow-down"></span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="choose row">
+            <div class="col-lg-3 col-md-3 col-sm-3 exp">
+              <input type="text" class="form-control input-sm" placeholder="转让费"/>万元以内
+              <label for="my" class="checkbox-inline"><input type="checkbox" id="my" value="my"/> 可面议</label>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 rent">
+              <strong>租金</strong>
+              <input type="text" class="form-control input-sm" placeholder="0"/>
+              至
+              <input type="text" class="form-control input-sm" placeholder="0"/>
+              <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                  元/月 <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">元/m<sup>2</sup>/天</a></li>
+                </ul>
+              </div>
+              <label for="myrent" class="checkbox-inline"><input type="checkbox" id="myrent" value="myrent"/> 可面议</label>
+              <a href="javascript:;">重置</a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 size">
+              <strong>面积</strong>
+              <input type="text" class="form-control input-sm" placeholder="0"/>
+              至
+              <input type="text" class="form-control input-sm" placeholder="0"/>
+              m<sup>2</sup>
+              <a href="javascript:;">重置</a>
+            </div>
+          </div>
+        </div>
+        <div class="list-con">
+          <div class="item row" onclick="javascript:window.location.href='detail_01.htm'">
+            <div class="col-lg-7 col-md-6 col-sm-6 col-xs-7 base">
+              <div class="media">
+                <div class="media-left">
+                  <div><div class="point">优选</div><img src="img/store-pic.jpg"></div>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading"><span>[ 转让 ]</span><strong>淮海路与中山南路路口三楼顶级黄金商铺人流大</strong></h4>
+                  <div class="info">
+                    <span class="att ok"><i class="fa fa-check"></i>腾铺认证信息</span>
+                    <span class="time"><i class="fa fa-clock-o"></i>刚刚</span>
+                  </div>
+                  <div class="pos">
+                    <p><span>白下 淮海路</span><span>淮海路与中山南路路口</span></p>
+                    <p><span>商业街卖场</span><span>其他</span></p>
+                  </div>
+                  <div class="do">
+                    <a href="#"><i class="fa fa-heart-o"></i>收藏</a>
+                    <a href="#"><i class="fa fa-exchange"></i>加入对比</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-3 rent">
+              <p>
+                <small>转让费用</small>
+                <strong>35</strong><span>万元</span>
+              </p>
+              <p>
+                <small>租金费用</small>
+                <strong>178300</strong><span>元/月</span>
+              </p>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 size">
+              <small class="hidden">总面积</small>
+              <strong>102</strong>
+              <span>m<sup>2</sup></span>
+              <span class="btn btn-default">空转</span>
+            </div>
+          </div>
+          <div class="cut row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+              <div class="item-store media">
+                <div class="media-left"><img src="img/store-pic.jpg" alt=""></div>
+                <div class="media-body">
+                  <h4 class="media-heading">秦淮瑞金路成熟商圈临街商业秦淮瑞金路成熟商圈临街商业</h4>
+                  <p><strong>[转让]</strong><span>秦淮 秦淮周边</span><span>商业街区</span></p>
+                  <p><span><strong>35</strong>m<sup name="">2</sup></span>
+                  <span><strong>14000</strong>元/月</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+              <div class="item-store media">
+                <div class="media-left"><img src="img/store-pic.jpg" alt=""></div>
+                <div class="media-body">
+                  <h4 class="media-heading">秦淮瑞金路成熟商圈临街商业</h4>
+                  <p><strong>[转让]</strong><span>秦淮 秦淮周边</span><span>商业街区</span><span>商业街区</span></p>
+                  <p><span><strong>107</strong>m<sup name="">2</sup></span>
+                  <span><strong>14000</strong>元/m<sup>2</sup>/天</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+              <div class="item-store media">
+                <div class="media-left"><img src="img/store-pic.jpg" alt=""></div>
+                <div class="media-body">
+                  <h4 class="media-heading">秦淮瑞金路成熟商圈临街商业</h4>
+                  <p><strong>[转让]</strong><span>秦淮 秦淮周边</span><span>商业街区</span></p>
+                  <p><span><strong>35</strong>m<sup name="">2</sup></span>
+                  <span><strong>面议</strong></span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item row">
+            <div class="col-lg-7 col-md-6 col-sm-6 col-xs-7 base">
+              <div class="media">
+                <div class="media-left"><div><img src="img/store-pic.jpg"></div></div>
+                <div class="media-body">
+                  <h4 class="media-heading"><span>[ 转让 ]</span><strong>淮海路与中山南路路口三楼顶级黄金商铺人流大</strong></h4>
+                  <div class="info">
+                    <span class="att ok"><i class="fa fa-check"></i>腾铺认证信息</span>
+                    <span class="time"><i class="fa fa-clock-o"></i>刚刚</span>
+                  </div>
+                  <div class="pos">
+                    <p><span>白下 淮海路</span><span>淮海路与中山南路路口</span></p>
+                    <p><span>商业街卖场</span><span>其他</span></p>
+                  </div>
+                  <div class="do">
+                    <span><i class="fa fa-heart"></i>已收藏</span>
+                    <a href="#"><i class="fa fa-exchange"></i>加入对比</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-3 rent">
+              <p>
+                <small>转让费用</small>
+                <strong>面议</strong>
+                <span>万元</span>
+              </p>
+              <p>
+                <small>租金费用</small>
+                <strong>12300</strong>
+                <span>元/m<sup>2</sup>/天</span>
+              </p>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 size">
+              <span class="hidden">总面积</span>
+              <strong>102</strong>
+              <span>m<sup>2</sup></span>
+            </div>
+          </div>
+          <div class="item row">
+            <div class="col-lg-7 col-md-6 col-sm-6 col-xs-7 base">
+              <div class="media">
+                <div class="media-left"><div><img src="img/store-pic.jpg"></div></div>
+                <div class="media-body">
+                  <h4 class="media-heading"><span>[ 转让 ]</span><strong>淮海路与中山南路路口三楼顶级黄金商铺人流大</strong></h4>
+                  <div class="info">
+                    <span class="att ok"><i class="fa fa-check"></i>腾铺认证信息</span>
+                    <span class="time"><i class="fa fa-clock-o"></i>刚刚</span>
+                  </div>
+                  <div class="pos">
+                    <p><span>白下 淮海路</span><span>淮海路与中山南路路口</span></p>
+                    <p><span>商业街卖场</span><span>其他</span></p>
+                  </div>
+                  <div class="do">
+                    <span><i class="fa fa-heart"></i>已收藏</span>
+                    <a href="#"><i class="fa fa-exchange"></i>加入对比</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-3 rent">
+              <p>
+                <small>转让费用</small>
+                <strong>面议</strong>
+                <span>万元</span>
+              </p>
+              <p>
+                <small>租金费用</small>
+                <strong>面议</strong>
+                <span>元/月</span>
+              </p>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 size">
+              <span class="hidden">总面积</span>
+              <strong>62</strong>
+              <span>m<sup>2</sup></span>
+            </div>
+          </div>
+          <div class="item row">
+            <div class="col-lg-7 col-md-6 col-sm-6 col-xs-7 base">
+              <div class="media">
+                <div class="media-left">
+                  <div><div class="point">优选</div><img src="img/store-pic.jpg"></div>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading"><span>[ 转让 ]</span><strong>淮海路与中山南路路口三楼顶级黄金商铺人流大</strong></h4>
+                  <div class="info">
+                    <span class="att">网友个人信息</span>
+                    <span class="time"><i class="fa fa-clock-o"></i>刚刚</span>
+                  </div>
+                  <div class="pos">
+                    <p><span>白下 淮海路</span><span>淮海路与中山南路路口</span></p>
+                    <p><span>商业街卖场</span><span>其他</span></p>
+                  </div>
+                  <div class="do">
+                    <a href="#"><i class="fa fa-heart-o"></i>收藏</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-3 rent">
+              <p>
+                <small>转让费用</small>
+                <strong>35</strong><span>万元</span>
+              </p>
+              <p>
+                <small>租金费用</small>
+                <strong>178300</strong><span>元/月</span>
+              </p>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 size">
+              <small class="hidden">总面积</small>
+              <strong>102</strong>
+              <span>m<sup>2</sup></span>
+              <span class="btn btn-default">空转</span>
+            </div>
+          </div>
+          <nav>
+            <ul class="pagination pagination-lg">
+              <li class="disabled"><a href="#">«</a></li>
+              <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">»</a></li>
+           </ul>
+          </nav>
+        </div>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="sale">
+        <div class="list-type">
+          <dl class="dl-horizontal">
+            <dt>分类：</dt>
+            <dd>
+              <div class="con">
+                <label class="radio-inline">
+                  <input type="radio" name="optionsRadios" id="radio" value="option1"> 出租<small>(32)</small>
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="optionsRadios" id="radio" value="option2"> 出售<small>(51)</small>
+                </label>
+              </div>
+            </dd>
+          </dl>
+          <dl class="dl-horizontal">
+            <dt>区域：</dt>
+            <dd>
+              <div class="sel-tab" id="area">
+                <ul class="nav nav-tabs" role="tablist">
+                  <li role="presentation" class="active"><a href="#areaAll-2" role="tab" data-toggle="tab">区域不限</a></li>
+                  <li role="presentation"><a href="#ward-2" role="tab" data-toggle="tab">行政区</a></li>
+                  <li role="presentation"><a href="#line-2" role="tab" data-toggle="tab">地铁线</a></li>
+                  <li role="presentation"><a href="#business-2" role="tab" data-toggle="tab">商圈</a></li>
+                </ul>
+              </div>
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane" id="areaAll-2"></div>
+                <div role="tabpanel" class="tab-pane" id="ward-2">
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 玄武区<small>(32)</small>
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 鼓楼区<small>(51)</small>
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 建邺区<small>(32)</small>
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 白下区<small>(3)</small>
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 秦淮区<small>(32)</small>
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 下关区<small>(32)</small>
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 雨花台区<small>(32)</small>
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 浦口区<small>(32)</small>
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 栖霞区<small>(32)</small>
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 江宁区<small>(32)</small>
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 六合区<small>(32)</small>
+                  </label>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="line-2">...</div>
+                <div role="tabpanel" class="tab-pane" id="business-2">...</div>
+              </div>
+            </dd>
+          </dl>
+          <dl class="dl-horizontal">
+            <dt>类型：</dt>
+            <dd>
+              <a href="javascript:;">类型不限</a>
+              <div class="con">
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 商业街卖场<small>(32)</small>
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 写字楼配套<small>(51)</small>
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 住宅底商<small>(32)</small>
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 摊位柜台<small>(3)</small>
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 其他<small>(32)</small>
+                </label>
+              </div>              
+            </dd>
+          </dl>
+        </div>
+        <div class="list-seleced">
+          <div class="con nokong">
+            <!--如果没有筛选条件，以下内容直接移除，不要设置为 display:none><-->
+            <small>您已选择</small>
+            <a href="javascript:;" class="label label-theme">鼓楼区<span>╳</span></a>
+            <a href="javascript:;" class="label label-theme">建邺区<span>╳</span></a>
+            <a href="javascript:;" class="label label-theme">美容美发<span>╳</span></a>
+            <a href="javascript:;" class="label label-theme">商业街卖场<span>╳</span></a>
+            <a href="javascript:;" class="label label-theme">鼓楼区<span>╳</span></a>
+            <a href="javascript:;" class="label label-theme">建邺区<span>╳</span></a>
+            <a href="javascript:;" class="label label-theme">鼓楼区<span>╳</span></a>
+            <a href="javascript:;" class="label label-theme">建邺区<span>╳</span></a>
+            <a href="javascript:;" class="label label-theme">美容美发<span>╳</span></a>
+            <a href="javascript:;" class="label label-theme">商业街卖场<span>╳</span></a>
+            <!--如果没有筛选条件，以上内容直接移除 end><-->
+            <div class="other">
+              <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                  租金费由低到高 <span class="fa fa-long-arrow-up"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                  <li><a href="#">默认最新发布的</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">租金费由高到低 <span class="fa fa-long-arrow-down"></span></a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">总面积由小到大 <span class="fa fa-long-arrow-up"></span></a></li>
+                  <li><a href="#">总面积由大到小 <span class="fa fa-long-arrow-down"></span></a></li>
+                </ul>
+              </div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-default active">默认最新<span>发布的</span></button>
+                <button type="button" class="btn btn-default">租金费<span>由低到高</span> <span class="fa fa-long-arrow-up"></span></button>
+                <button type="button" class="btn btn-default">总面积<span>由小到大</span> <span class="fa fa-long-arrow-up"></span></button>
+              </div>
+            </div>
+          </div>
+          <div class="choose row">
+            <div class="col-lg-8 col-md-8 col-sm-8 rent">
+              <strong>租金</strong>
+              <input type="text" class="form-control input-sm" placeholder="0"/>
+              至
+              <input type="text" class="form-control input-sm" placeholder="0"/>
+              <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                  元/月 <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">元/m<sup>2</sup>/天</a></li>
+                </ul>
+              </div>
+              <label for="myrent" class="checkbox-inline"><input type="checkbox" id="myrent" value="myrent"/> 可面议</label>
+              <a href="javascript:;">重置</a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 size">
+              <strong>面积</strong>
+              <input type="text" class="form-control input-sm" placeholder="0"/>
+              至
+              <input type="text" class="form-control input-sm" placeholder="0"/>
+              m<sup>2</sup>
+              <a href="javascript:;">重置</a>
+            </div>
+          </div>
+        </div>
+        <div class="list-con">
+          <div class="item row">
+            <div class="col-lg-7 col-md-6 col-sm-6 col-xs-7 base">
+              <div class="media">
+                <div class="media-left">
+                  <div><div class="point">优选</div><img src="img/store-pic.jpg"></div>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading"><span>[ 出租 ]</span><strong>淮海路与中山南路路口三楼顶级黄金商铺人流大</strong></h4>
+                  <div class="info">
+                    <span class="att ok"><i class="fa fa-check"></i>腾铺认证信息</span>
+                    <span class="time"><i class="fa fa-clock-o"></i>刚刚</span>
+                  </div>
+                  <div class="pos">
+                    <p><span>白下 淮海路</span><span>淮海路与中山南路路口</span></p>
+                    <p><span>商业街卖场</span><span>其他</span></p>
+                  </div>
+                  <div class="do">
+                    <a href="#"><i class="fa fa-heart-o"></i>收藏</a>
+                    <a href="#"><i class="fa fa-exchange"></i>加入对比</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-3 rent">
+              <p>
+                <small>每月租金</small>
+                <strong>178300</strong><span>元/月</span>
+              </p>
+              <p>
+                <small>每平租金</small>
+                <strong>3567</strong><span>元/m<sup name="">2</sup>/天</span>
+              </p>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 size">
+              <small class="hidden">总面积</small>
+              <strong>102</strong>
+              <span>m<sup>2</sup></span>
+            </div>
+          </div>
+          <div class="cut row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+              <div class="item-store media">
+                <div class="media-left"><img src="img/store-pic.jpg" alt=""></div>
+                <div class="media-body">
+                  <h4 class="media-heading">秦淮瑞金路成熟商圈临街商业秦淮瑞金路成熟商圈临街商业</h4>
+                  <p><strong>[出租]</strong><span>秦淮 秦淮周边</span><span>商业街区</span></p>
+                  <p><span><strong>35</strong>m<sup name="">2</sup></span>
+                  <span><strong>14000</strong>元/月</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+              <div class="item-store media">
+                <div class="media-left"><img src="img/store-pic.jpg" alt=""></div>
+                <div class="media-body">
+                  <h4 class="media-heading">秦淮瑞金路成熟商圈临街商业</h4>
+                  <p><strong>[出租]</strong><span>秦淮 秦淮周边</span><span>商业街区</span><span>商业街区</span></p>
+                  <p><span><strong>107</strong>m<sup name="">2</sup></span>
+                  <span><strong>14000</strong>元/m<sup>2</sup>/天</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+              <div class="item-store media">
+                <div class="media-left"><img src="img/store-pic.jpg" alt=""></div>
+                <div class="media-body">
+                  <h4 class="media-heading">秦淮瑞金路成熟商圈临街商业</h4>
+                  <p><strong>[出租]</strong><span>秦淮 秦淮周边</span><span>商业街区</span></p>
+                  <p><span><strong>35</strong>m<sup name="">2</sup></span>
+                  <span><strong>面议</strong></span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item row">
+            <div class="col-lg-7 col-md-6 col-sm-6 col-xs-7 base">
+              <div class="media">
+                <div class="media-left"><div><img src="img/store-pic.jpg"></div></div>
+                <div class="media-body">
+                  <h4 class="media-heading"><span>[ 出租 ]</span><strong>淮海路与中山南路路口三楼顶级黄金商铺人流大</strong></h4>
+                  <div class="info">
+                    <span class="att ok"><i class="fa fa-check"></i>腾铺认证信息</span>
+                    <span class="time"><i class="fa fa-clock-o"></i>刚刚</span>
+                  </div>
+                  <div class="pos">
+                    <p><span>白下 淮海路</span><span>淮海路与中山南路路口</span></p>
+                    <p><span>商业街卖场</span><span>其他</span></p>
+                  </div>
+                  <div class="do">
+                    <span><i class="fa fa-heart"></i>已收藏</span>
+                    <a href="#"><i class="fa fa-exchange"></i>加入对比</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-3 rent">
+              <p>
+                <small>每月租金</small>
+                <strong>178300</strong><span>元/月</span>
+              </p>
+              <p>
+                <small>每平租金</small>
+                <strong>3567</strong><span>元/m<sup name="">2</sup>/天</span>
+              </p>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 size">
+              <span class="hidden">总面积</span>
+              <strong>39</strong>
+              <span>m<sup>2</sup></span>
+            </div>
+          </div>
+          <div class="item row">
+            <div class="col-lg-7 col-md-6 col-sm-6 col-xs-7 base">
+              <div class="media">
+                <div class="media-left"><div><img src="img/store-pic.jpg"></div></div>
+                <div class="media-body">
+                  <h4 class="media-heading"><span>[ 出租 ]</span><strong>淮海路与中山南路路口三楼顶级黄金商铺人流大</strong></h4>
+                  <div class="info">
+                    <span class="att ok"><i class="fa fa-check"></i>腾铺认证信息</span>
+                    <span class="time"><i class="fa fa-clock-o"></i>刚刚</span>
+                  </div>
+                  <div class="pos">
+                    <p><span>白下 淮海路</span><span>淮海路与中山南路路口</span></p>
+                    <p><span>商业街卖场</span><span>其他</span></p>
+                  </div>
+                  <div class="do">
+                    <span><i class="fa fa-heart"></i>已收藏</span>
+                    <a href="#"><i class="fa fa-exchange"></i>加入对比</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-3 rent">
+              <p>
+                <small>租金费用</small>
+                <strong>面议</strong>
+              </p>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 size">
+              <span class="hidden">总面积</span>
+              <strong>62</strong>
+              <span>m<sup>2</sup></span>
+            </div>
+          </div>
+          <div class="item row">
+            <div class="col-lg-7 col-md-6 col-sm-6 col-xs-7 base">
+              <div class="media">
+                <div class="media-left">
+                  <div><img src="img/store-pic.jpg"></div>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading"><span>[ 出租 ]</span><strong>淮海路与中山南路路口三楼顶级黄金商铺人流大</strong></h4>
+                  <div class="info">
+                    <span class="att">网友个人信息</span>
+                    <span class="time"><i class="fa fa-clock-o"></i>刚刚</span>
+                  </div>
+                  <div class="pos">
+                    <p><span>白下 淮海路</span><span>淮海路与中山南路路口</span></p>
+                    <p><span>商业街卖场</span><span>其他</span></p>
+                  </div>
+                  <div class="do">
+                    <a href="#"><i class="fa fa-heart-o"></i>收藏</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-3 rent">
+              <p>
+                <small>每月租金</small>
+                <strong>178300</strong><span>元/月</span>
+              </p>
+              <p>
+                <small>每平租金</small>
+                <strong>567</strong><span>元/m<sup name="">2</sup>/天</span>
+              </p>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 size">
+              <small class="hidden">总面积</small>
+              <strong>102</strong>
+              <span>m<sup>2</sup></span>
+            </div>
+          </div>
+          <nav>
+            <ul class="pagination pagination-lg">
+              <li class="disabled"><a href="#">«</a></li>
+              <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">»</a></li>
+           </ul>
+          </nav>
+        </div>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="want">
+        <div class="list-type">
+          <dl class="dl-horizontal">
+            <dt>分类：</dt>
+            <dd>
+              <div class="con">
+                <label class="radio-inline">
+                  <input type="radio" name="optionsRadios" id="radio" value="option1"> 求租<small>(32)</small>
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="optionsRadios" id="radio" value="option2"> 求购<small>(51)</small>
+                </label>
+              </div>
+            </dd>
+          </dl>
+          <dl class="dl-horizontal">
+            <dt>区域：</dt>
+            <dd>
+              <div class="sel-tab" id="area">
+                <ul class="nav nav-tabs" role="tablist">
+                  <li role="presentation" class="active"><a href="#areaAll-3" role="tab" data-toggle="tab">区域不限</a></li>
+                  <li role="presentation"><a href="#ward-3" role="tab" data-toggle="tab">行政区</a></li>
+                  <li role="presentation"><a href="#line-3" role="tab" data-toggle="tab">地铁线</a></li>
+                  <li role="presentation"><a href="#business-3" role="tab" data-toggle="tab">商圈</a></li>
+                </ul>
+              </div>
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane" id="areaAll-3"></div>
+                <div role="tabpanel" class="tab-pane" id="ward-3">
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 玄武区<small>(32)</small>
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 鼓楼区<small>(51)</small>
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 建邺区<small>(32)</small>
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 白下区<small>(3)</small>
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 秦淮区<small>(32)</small>
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 下关区<small>(32)</small>
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 雨花台区<small>(32)</small>
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 浦口区<small>(32)</small>
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 栖霞区<small>(32)</small>
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 江宁区<small>(32)</small>
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 六合区<small>(32)</small>
+                  </label>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="line-3">...</div>
+                <div role="tabpanel" class="tab-pane" id="business-3">...</div>
+              </div>
+            </dd>
+          </dl>
+          <dl class="dl-horizontal">
+            <dt>类型：</dt>
+            <dd>
+              <a href="javascript:;">类型不限</a>
+              <div class="con">
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 商业街卖场<small>(32)</small>
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 写字楼配套<small>(51)</small>
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 住宅底商<small>(32)</small>
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 摊位柜台<small>(3)</small>
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 其他<small>(32)</small>
+                </label>
+              </div>              
+            </dd>
+          </dl>
+        </div>
+        <div class="list-seleced">
+          <div class="con noseq">
+            <!--如果没有筛选条件，以下内容直接移除，不要设置为 display:none><-->
+            <small>您已选择</small>
+            <a href="javascript:;" class="label label-theme">鼓楼区<span>╳</span></a>
+            <a href="javascript:;" class="label label-theme">建邺区<span>╳</span></a>
+            <a href="javascript:;" class="label label-theme">美容美发<span>╳</span></a>
+            <a href="javascript:;" class="label label-theme">商业街卖场<span>╳</span></a>
+            <!--如果没有筛选条件，以上内容直接移除 end><-->
+          </div>
+          <div class="choose row">
+            <div class="col-lg-8 col-md-8 col-sm-8 rent">
+              <strong>租金</strong>
+              <input type="text" class="form-control input-sm" placeholder="0"/>
+              至
+              <input type="text" class="form-control input-sm" placeholder="0"/>
+              <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                  元/月 <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">元/m<sup>2</sup>/天</a></li>
+                </ul>
+              </div>
+              <label for="myrent" class="checkbox-inline"><input type="checkbox" id="myrent" value="myrent"/> 可面议</label>
+              <a href="javascript:;">重置</a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 size">
+              <strong>面积</strong>
+              <input type="text" class="form-control input-sm" placeholder="0"/>
+              至
+              <input type="text" class="form-control input-sm" placeholder="0"/>
+              m<sup>2</sup>
+              <a href="javascript:;">重置</a>
+            </div>
+          </div>
+        </div>
+        <div class="list-con">
+          <div class="item row need">
+            <div class="col-lg-6 col-md-5 col-sm-5 col-xs-6 base">
+              <div class="media">
+                <div class="media-body">
+                  <h4 class="media-heading"><span>[ 求租 ]</span><strong>淮海路与中山南路路口三楼顶级黄金商铺人流大</strong></h4>
+                  <div class="info">
+                    <span class="att ok"><i class="fa fa-check"></i>腾铺认证信息</span>
+                    <span class="time"><i class="fa fa-clock-o"></i>刚刚</span>
+                  </div>
+                  <div class="pos">
+                    <p><span>白下 淮海路</span><span>淮海路与中山南路路口</span></p>
+                    <p><span>商业街卖场</span><span>其他</span></p>
+                  </div>
+                  <div class="do">
+                    <a href="#"><i class="fa fa-heart-o"></i>收藏</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-3 rent">
+              <p>
+                <small class="hidden">租金</small>
+                <strong>12800</strong>
+                <strong>18000</strong>
+                <span>元/月</span>
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 size">
+              <small class="hidden">面积</small>
+              <strong>30</strong>
+              <span>m<sup>2</sup></span>
+            </div>
+          </div>
+          <div class="item row need">
+            <div class="col-lg-6 col-md-5 col-sm-5 col-xs-6 base">
+              <div class="media">
+                <div class="media-body">
+                  <h4 class="media-heading"><span>[ 求购 ]</span><strong>淮海路与中山南路路口三楼顶级黄金商铺人流大</strong></h4>
+                  <div class="info">
+                    <span class="att ok"><i class="fa fa-check"></i>腾铺认证信息</span>
+                    <span class="time"><i class="fa fa-clock-o"></i>今天 08:28</span>
+                  </div>
+                  <div class="pos">
+                    <p><span>白下 淮海路</span><span>淮海路与中山南路路口</span></p>
+                    <p><span>商业街卖场</span><span>其他</span></p>
+                  </div>
+                  <div class="do">
+                    <span><i class="fa fa-heart"></i>已收藏</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-3 rent">
+              <p>
+                <small class="hidden">售价</small>
+                <strong>面议</strong>
+                <span>万元</span>
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 size">
+              <small class="hidden">面积</small>
+              <strong>56</strong><strong>70</strong>
+              <span>m<sup>2</sup></span>
+            </div>
+          </div>
+          <div class="item row need">
+            <div class="col-lg-6 col-md-5 col-sm-5 col-xs-6 base">
+              <div class="media">
+                <div class="media-body">
+                  <h4 class="media-heading"><span>[ 求租 ]</span><strong>淮海路与中山南路路口三楼顶级黄金商铺人流大</strong></h4>
+                  <div class="info">
+                    <span class="att ok"><i class="fa fa-check"></i>腾铺认证信息</span>
+                    <span class="time"><i class="fa fa-clock-o"></i>昨天</span>
+                  </div>
+                  <div class="pos">
+                    <p><span>白下 淮海路</span><span>淮海路与中山南路路口</span></p>
+                    <p><span>商业街卖场</span><span>其他</span></p>
+                  </div>
+                  <div class="do">
+                    <span><i class="fa fa-heart"></i>已收藏</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-3 rent">
+              <p>
+                <small class="hidden">租金</small>
+                <strong>21000</strong>
+                <strong>35000</strong>
+                <span>元/月</span>
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 size">
+              <small class="hidden">面积</small>
+              <strong>不限</strong><strong>120</strong>
+              <span>m<sup>2</sup></span>
+            </div>
+          </div>
+          <div class="item row need">
+            <div class="col-lg-6 col-md-5 col-sm-5 col-xs-6 base">
+              <div class="media">
+                <div class="media-body">
+                  <h4 class="media-heading"><span>[ 求租 ]</span><strong>淮海路与中山南路路口三楼顶级黄金商铺人流大</strong></h4>
+                  <div class="info">
+                    <span class="att">网友个人信息</span>
+                    <span class="time"><i class="fa fa-clock-o"></i>2天前</span>
+                  </div>
+                  <div class="pos">
+                    <p><span>白下 淮海路</span><span>淮海路与中山南路路口</span></p>
+                    <p><span>商业街卖场</span><span>其他</span></p>
+                  </div>
+                  <div class="do">
+                    <a href="#"><i class="fa fa-heart-o"></i>收藏</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-3 rent">
+              <p>
+                <small class="hidden">租金</small>
+                <strong>不限</strong>
+                <strong>35000</strong>
+                <span>元/月</span>
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 size">
+              <small class="hidden">面积</small>
+              <strong>100</strong><strong>120</strong>
+              <span>m<sup>2</sup></span>
+            </div>
+          </div>
+          <div class="item row need">
+            <div class="col-lg-6 col-md-5 col-sm-5 col-xs-6 base">
+              <div class="media">
+                <div class="media-body">
+                  <h4 class="media-heading"><span>[ 求购 ]</span><strong>淮海路与中山南路路口三楼顶级黄金商铺人流大</strong></h4>
+                  <div class="info">
+                    <span class="att">网友个人信息</span>
+                    <span class="time"><i class="fa fa-clock-o"></i>2016.10.01</span>
+                  </div>
+                  <div class="pos">
+                    <p><span>白下 淮海路</span><span>淮海路与中山南路路口</span></p>
+                    <p><span>商业街卖场</span><span>其他</span></p>
+                  </div>
+                  <div class="do">
+                    <span><i class="fa fa-heart"></i>已收藏</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-3 rent">
+              <p>
+                <small class="hidden">售价</small>
+                <strong>不限</strong>
+                <strong>36</strong>
+                <span>万元</span>
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 size">
+              <small class="hidden">面积</small>
+              <strong>20</strong>
+              <span>m<sup>2</sup></span>
+            </div>
+          </div>
+          <nav>
+            <ul class="pagination pagination-lg">
+              <li class="disabled"><a href="#">«</a></li>
+              <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">»</a></li>
+           </ul>
+          </nav>
+        </div>
+      </div>
+
+      <a href="ratio.htm" class="btn btn-match ratio" target="_blank"><i>3</i>对比</a>
+    </div>
+
+    
+
+
+
+
+
+
+
+    <div id="footer" class="container-fluid">
+      <div class="con container">
+        <div class="service row">
+          <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+            <i></i>
+            <strong>个性化定制</strong>
+            <p><small>一铺一方案，全方案定制</small><small>充分满足每个客户的实际需求</small></p>
+          </div>
+          <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+            <i></i>
+            <strong>专业服务</strong>
+            <p><small>专注店铺转让业务6年+</small><small>专业服务团队，资深服务专员</small></p>
+          </div>
+          <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+            <i></i>
+            <strong>高性价比</strong>
+            <p><small>服务全程价格透明</small><small>第三方免费监督与投诉</small></p>
+          </div>
+          <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+            <i></i>
+            <strong>绝佳体验</strong>
+            <p><small>特色快转服务，全程跟踪服务</small><small>成功转让是我们的服务终点</small></p>
+          </div>
+        </div>
+        <div class="copy row">
+          <div class="col-sm-7 col-md-7 col-lg-7">
+            <ul class="list-inline">
+              <li><a href="javascript:;">关于我们</a></li>
+              <li><a href="javascript:;">团队介绍</a></li>
+              <li><a href="javascript:;">品牌合作</a></li>
+              <li><a href="javascript:;">服务协议</a></li>
+            </ul>
+            <p>CopyRight   &copy;  2016-2017<a href="http://www.NJTPW.COM">腾铺网  NJTPW.COM</a>苏ICP备08121436号</p>
+          </div>
+          <div class="col-sm-5 col-md-5 col-lg-5 text-right">
+            <a href="javascript:;" class="btn btn-match btn-lg"><i class="fa fa-qq"></i>在线业务咨询</a>
+            <span><i class="fa fa-mobile-phone"></i>025-52260598</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

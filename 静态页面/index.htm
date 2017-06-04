@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>分站首页</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+      $('.carousel').carousel({
+        interval: false
+      })
+
+      $('body').scrollspy({ target: '.nav-fast' })
+
+      
+      $('#fast').affix({
+        offset: {
+          top: $("#new .list").offset().top
+        }
+      })
+
+      var aW=$(".index-lease .list ol li").eq(0).width();
+      $(".index-lease .list a").css("width",aW-60);
+      
+    });
+    </script>
+    <style type="text/css">
+    .affix{top:20px;}
+    </style>
+
+  </head>
+  <body data-spy="scroll" data-target=".nav-fast">
+    <div id="top" class="index container-fluid">
+      <div class="con container">
+        <a href="javascript:;" class="visible-xs-block"><i class="fa fa-reorder"></i></a>
+        <ul class="list-inline hidden-xs">
+          <li><a href="default.htm">主站</a></li>
+          <li><a href="index.htm">分站首页</a></li>
+          <li><a href="">商铺转让</a></li>
+          <li><a href="">商铺租售</a></li>
+          <li><a href="">写字楼</a></li>
+          <li><a href="">厂房仓库</a></li>
+          <li><a href="">求租求购</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="header" class="index container-fluid">
+      <div class="con container">
+        <div class="row">
+          <div class="col-md-8 col-lg-8">
+            <a href="default.htm" title="南京腾铺" class="logo"><img src="img/default-logo.jpg"/></a>
+            <div class="dropdown area">
+              <button class="btn btn-default dropdown-toggle btn-lg" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                南京
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">杭州</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">成都</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">无锡</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">北京</a></li>
+              </ul>
+            </div>
+            <div class="input-group input-group-lg search">
+              <input type="text" class="form-control">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+              </span>
+            </div>
+          </div>
+          <div class="text-right col-md-4 col-lg-4">
+            <a href="" class="btn btn-default">免费发布信息</a>
+            <a href="" class="btn btn-theme-line">登录</a>
+            <a href="" class="btn btn-link">注册</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="menu" class="index container-fluid">
+      <div class="con container">
+        <div class="menu">
+          <ul>
+            <li><a href="list.htm"><i class="jl"></i>酒楼餐饮</a></li>
+            <li><a href="list.htm"><i class="mr"></i>美容美发</a></li>
+            <li><a href="list.htm"><i class="fs"></i>服饰鞋包</a></li>
+            <li><a href="list.htm"><i class="xx"></i>休闲娱乐</a></li>
+            <li><a href="list.htm"><i class="bh"></i>百货超市</a></li>
+            <li><a href="list.htm"><i class="sh"></i>生活服务</a></li>
+            <li><a href="list.htm"><i class="dz"></i>电子通讯</a></li>
+            <li><a href="list.htm"><i class="qx"></i>汽修美容</a></li>
+            <li><a href="list.htm"><i class="jj"></i>家具建材</a></li>
+            <li><a href="list.htm"><i class="yy"></i>医药保健</a></li>
+            <li><a href="list.htm"><i class="jy"></i>教育培训</a></li>
+            <li><a href="list.htm"><i class="kp"></i>空铺转让</a></li>
+            <li><a href="list.htm"><i class="zg"></i>专柜转让</a></li>
+            <li><a href="list.htm"><i class="bg"></i>旅馆宾馆</a></li>
+            <li><a href="list.htm"><i class="qt"></i>其他转让</a></li>
+          </ul>
+        </div>
+        <a href="javascript:;" class="in"><strong>我要找店</strong><small>Looking for a store</small></a>
+        <a href="javascript:;" class="out"><strong>我要转店</strong><small>Attorn my store</small></a>
+      </div>
+    </div>
+
+
+    <div id="new" class="index-new container">
+      <h3 class="text-center">
+        <strong>最新<em>爆</em>料</strong>
+        <small>
+          <a href="javascript:;">三天内</a>
+          <a href="javascript:;">一周内</a>
+          <a href="javascript:;">更多</a>
+        </small>
+      </h3>
+      <div class="list">
+        <div class="item-store pic">
+          <img src="img/store-pic.jpg" alt="">
+          <div class="con">
+            <div class="tit"><strong>市中心：十字路口超好旺铺转市中心：十字路口超好旺铺转市中心：十字路口超好旺铺转市中心：十字路口超好旺铺转</strong></div>
+            <dl>
+              <dt>[转让]</dt>
+              <dd>雨花台 西善桥</dd>
+              <dd><strong>35</strong>m<sup name="">2</sup></dd>
+              <dd><strong>14000</strong>元/月</dd>
+            </dl>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-6">
+            <div class="item-store media">
+              <div class="media-left"><img src="img/store-pic.jpg" alt=""></div>
+              <div class="media-body">
+                <h4 class="media-heading"><strong>市中心：十字路口超好旺铺转十字路口超好旺铺转</strong></h4>
+                <p>
+                  <strong>[转让]</strong>
+                  <span>雨花台 西善桥</span>
+                  <span>商业街卖场</span>
+                </p>
+                <p>
+                  <span><strong>35</strong>m<sup name="">2</sup></span>
+                  <span><strong>14000</strong>元/月</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <div class="item-store media">
+              <div class="media-left"><img src="img/store-pic.jpg" alt=""></div>
+              <div class="media-body">
+                <h4 class="media-heading"><strong>市中心：十字路口超好旺铺转</strong></h4>
+                <p>
+                  <strong>[转让]</strong>
+                  <span>雨花台 西善桥</span>
+                  <span>商业街卖场</span>
+                </p>
+                <p>
+                  <span><strong>35</strong>m<sup name="">2</sup></span>
+                  <span><strong>14000</strong>元/月</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <div class="item-store media">
+              <div class="media-left"><img src="img/store-pic.jpg" alt=""></div>
+              <div class="media-body">
+                <h4 class="media-heading"><strong>市中心：十字路口超好旺铺转</strong></h4>
+                <p>
+                  <strong>[转让]</strong>
+                  <span>雨花台 西善桥</span>
+                  <span>商业街卖场</span>
+                </p>
+                <p>
+                  <span><strong>35</strong>m<sup name="">2</sup></span>
+                  <span><strong>14000</strong>元/月</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <div class="item-store media">
+              <div class="media-left"><img src="img/store-pic.jpg" alt=""></div>
+              <div class="media-body">
+                <h4 class="media-heading"><strong>市中心：十字路口超好旺铺转</strong></h4>
+                <p>
+                  <strong>[转让]</strong>
+                  <span>雨花台 西善桥</span>
+                  <span>商业街卖场</span>
+                </p>
+                <p>
+                  <span><strong>35</strong>m<sup name="">2</sup></span>
+                  <span><strong>14000</strong>元/月</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <div class="item-store media">
+              <div class="media-left"><img src="img/store-pic.jpg" alt=""></div>
+              <div class="media-body">
+                <h4 class="media-heading"><strong>市中心：十字路口超好旺铺转</strong></h4>
+                <p>
+                  <strong>[转让]</strong>
+                  <span>雨花台 西善桥</span>
+                  <span>商业街卖场</span>
+                </p>
+                <p>
+                  <span><strong>35</strong>m<sup name="">2</sup></span>
+                  <span><strong>14000</strong>元/月</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <div class="item-store media">
+              <div class="media-left"><img src="img/store-pic.jpg" alt=""></div>
+              <div class="media-body">
+                <h4 class="media-heading"><strong>市中心：十字路口超好旺铺转</strong></h4>
+                <p>
+                  <strong>[转让]</strong>
+                  <span>雨花台 西善桥</span>
+                  <span>商业街卖场</span>
+                </p>
+                <p>
+                  <span><strong>35</strong>m<sup name="">2</sup></span>
+                  <span><strong>14000</strong>元/月</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="fast" class="collapse navbar-collapse nav-fast">
+          <ul class="nav navbar-nav">
+            <li><a href="#new">最新爆料</a></li>
+            <li><a href="#choose">腾铺优选 </a></li>
+            <li><a href="#out">一周快转</a></li>
+            <li><a href="#lease">租售推荐</a></li>
+            <li><a href="#other">个人发布</a></li>
+            <li><a href="#top"><i class="fa fa-angle-up"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="choose" class="index-choose container">
+      <h3 class="text-center"><strong>腾铺<em>优</em>选</strong></h3>
+      <div class="list row">
+        <div class="col-lg-4 col-md-4">
+          <div class="item-store pic">
+            <div class="point">优选</div>
+            <img src="img/store-pic.jpg" alt="">
+            <div class="con">
+              <div class="tit"><strong>市中心：十字路口超好旺铺转市中心：十字路口超好旺铺转市中心：十字路口超好旺铺转市中心：十字路口超好旺铺转</strong></div>
+              <dl>
+                <dt>[转让]</dt>
+                <dd>雨花台 西善桥</dd>
+                <dd><strong>35</strong>m<sup name="">2</sup></dd>
+                <dd><strong>14000</strong>元/月</dd>
+              </dl>
+            </div>
+          </div>
+          <div class="con">
+            <div class="item-store media">
+              <div class="media-left">
+                <div class="point sm">优选</div>
+                <img src="img/store-pic.jpg" alt="">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading"><strong>市中心：十字路口超好旺铺转</strong></h4>
+                <p>
+                  <strong>[转让]</strong>
+                  <span>雨花台 西善桥</span>
+                  <span>商业街卖场</span>
+                </p>
+                <p>
+                  <span><strong>35</strong>m<sup name="">2</sup></span>
+                  <span><strong>14000</strong>元/月</span>
+                </p>
+              </div>
+            </div>
+            <div class="item-store media">
+              <div class="media-left">
+                <div class="point sm">优选</div>
+                <img src="img/store-pic.jpg" alt="">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading"><strong>市中心：十字路口超好旺铺转</strong></h4>
+                <p>
+                  <strong>[转让]</strong>
+                  <span>雨花台 西善桥</span>
+                  <span>商业街卖场</span>
+                </p>
+                <p>
+                  <span><strong>35</strong>m<sup name="">2</sup></span>
+                  <span><strong>14000</strong>元/月</span>
+                </p>
+              </div>
+            </div>
+            <div class="item-store media">
+              <div class="media-left">
+                <div class="point sm">优选</div>
+                <img src="img/store-pic.jpg" alt="">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading"><strong>市中心：十字路口超好旺铺转</strong></h4>
+                <p>
+                  <strong>[转让]</strong>
+                  <span>雨花台 西善桥</span>
+                  <span>商业街卖场</span>
+                </p>
+                <p>
+                  <span><strong>35</strong>m<sup name="">2</sup></span>
+                  <span><strong>14000</strong>元/月</span>
+                </p>
+              </div>
+            </div>
+            <div class="item-store media">
+              <div class="media-left">
+                <div class="point sm">优选</div>
+                <img src="img/store-pic.jpg" alt="">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading"><strong>市中心：十字路口超好旺铺转</strong></h4>
+                <p>
+                  <strong>[转让]</strong>
+                  <span>雨花台 西善桥</span>
+                  <span>商业街卖场</span>
+                </p>
+                <p>
+                  <span><strong>35</strong>m<sup name="">2</sup></span>
+                  <span><strong>14000</strong>元/月</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <div class="item-store pic">
+            <div class="point">优选</div>
+            <img src="img/store-pic.jpg" alt="">
+            <div class="con">
+              <div class="tit"><strong>市中心：十字路口超好旺铺转市中心：十字路口超好旺铺转市中心：十字路口超好旺铺转市中心：十字路口超好旺铺转</strong></div>
+              <dl>
+                <dt>[转让]</dt>
+                <dd>雨花台 西善桥</dd>
+                <dd><strong>35</strong>m<sup name="">2</sup></dd>
+                <dd><strong>14000</strong>元/月</dd>
+              </dl>
+            </div>
+          </div>
+          <div class="con">
+            <div class="item-store media">
+              <div class="media-left">
+                <div class="point sm">优选</div>
+                <img src="img/store-pic.jpg" alt="">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading"><strong>市中心：十字路口超好旺铺转</strong></h4>
+                <p>
+                  <strong>[转让]</strong>
+                  <span>雨花台 西善桥</span>
+                  <span>商业街卖场</span>
+                </p>
+                <p>
+                  <span><strong>35</strong>m<sup name="">2</sup></span>
+                  <span><strong>14000</strong>元/月</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="item-store media">
+              <div class="media-left">
+                <div class="point sm">优选</div>
+                <img src="img/store-pic.jpg" alt="">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading"><strong>市中心：十字路口超好旺铺转</strong></h4>
+                <p>
+                  <strong>[转让]</strong>
+                  <span>雨花台 西善桥</span>
+                  <span>商业街卖场</span>
+                </p>
+                <p>
+                  <span><strong>35</strong>m<sup name="">2</sup></span>
+                  <span><strong>14000</strong>元/月</span>
+                </p>
+              </div>
+            </div>
+            <div class="item-store media">
+              <div class="media-left">
+                <div class="point sm">优选</div>
+                <img src="img/store-pic.jpg" alt="">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading"><strong>市中心：十字路口超好旺铺转</strong></h4>
+                <p>
+                  <strong>[转让]</strong>
+                  <span>雨花台 西善桥</span>
+                  <span>商业街卖场</span>
+                </p>
+                <p>
+                  <span><strong>35</strong>m<sup name="">2</sup></span>
+                  <span><strong>14000</strong>元/月</span>
+                </p>
+              </div>
+            </div>
+            <div class="item-store media">
+              <div class="media-left">
+                <div class="point sm">优选</div>
+                <img src="img/store-pic.jpg" alt="">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading"><strong>市中心：十字路口超好旺铺转</strong></h4>
+                <p>
+                  <strong>[转让]</strong>
+                  <span>雨花台 西善桥</span>
+                  <span>商业街卖场</span>
+                </p>
+                <p>
+                  <span><strong>35</strong>m<sup name="">2</sup></span>
+                  <span><strong>14000</strong>元/月</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <div class="item-store pic">
+            <div class="point">优选</div>
+            <img src="img/store-pic.jpg" alt="">
+            <div class="con">
+              <div class="tit"><strong>市中心：十字路口超好旺铺转市中心：十字路口超好旺铺转市中心：十字路口超好旺铺转市中心：十字路口超好旺铺转</strong></div>
+              <dl>
+                <dt>[转让]</dt>
+                <dd>雨花台 西善桥</dd>
+                <dd><strong>35</strong>m<sup name="">2</sup></dd>
+                <dd><strong>14000</strong>元/月</dd>
+              </dl>
+            </div>
+          </div>
+          <div class="con">
+            <div class="item-store media">
+              <div class="media-left">
+                <div class="point sm">优选</div>
+                <img src="img/store-pic.jpg" alt="">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading"><strong>市中心：十字路口超好旺铺转市中心：十字路口超好旺铺转市中心：十字路口超好旺铺转市中心：十字路口超好旺铺转</strong></h4>
+                <p>
+                  <strong>[转让]</strong>
+                  <span>雨花台 西善桥</span>
+                  <span>商业街卖场</span>
+                </p>
+                <p>
+                  <span><strong>35</strong>m<sup name="">2</sup></span>
+                  <span><strong>14000</strong>元/月</span>
+                </p>
+              </div>
+            </div>
+            <div class="item-store media">
+              <div class="media-left">
+                <div class="point sm">优选</div>
+                <img src="img/store-pic.jpg" alt="">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading"><strong>市中心：十字路口超好旺铺转</strong></h4>
+                <p>
+                  <strong>[转让]</strong>
+                  <span>雨花台 西善桥</span>
+                  <span>商业街卖场</span>
+                </p>
+                <p>
+                  <span><strong>35</strong>m<sup name="">2</sup></span>
+                  <span><strong>14000</strong>元/月</span>
+                </p>
+              </div>
+            </div>
+            <div class="item-store media">
+              <div class="media-left">
+                <div class="point sm">优选</div>
+                <img src="img/store-pic.jpg" alt="">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading"><strong>市中心：十字路口超好旺铺转</strong></h4>
+                <p>
+                  <strong>[转让]</strong>
+                  <span>雨花台 西善桥</span>
+                  <span>商业街卖场</span>
+                </p>
+                <p>
+                  <span><strong>35</strong>m<sup name="">2</sup></span>
+                  <span><strong>14000</strong>元/月</span>
+                </p>
+              </div>
+            </div>
+            <div class="item-store media">
+              <div class="media-left">
+                <div class="point sm">优选</div>
+                <img src="img/store-pic.jpg" alt="">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading"><strong>市中心：十字路口超好旺铺转</strong></h4>
+                <p>
+                  <strong>[转让]</strong>
+                  <span>雨花台 西善桥</span>
+                  <span>商业街卖场</span>
+                </p>
+                <p>
+                  <span><strong>35</strong>m<sup name="">2</sup></span>
+                  <span><strong>14000</strong>元/月</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="more"><a href="javascript:;">更多</a></div>
+    </div>
+
+
+    <div id="out" class="index-out container">
+      <div class="quick">
+        <h3><i></i><strong><em>一周快转</em></strong></h3>
+        <div id="week" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#week" data-slide-to="0" class="active"></li>
+            <li data-target="#week" data-slide-to="1"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <div class="carousel-caption">
+                <div class="list row">
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="item-store media">
+                      <div class="media-body">
+                        <h4 class="media-heading">鼓楼广场中心地段黄金门面招租</h4>
+                        <p><strong>[出租]</strong><span>鼓楼 鼓楼周边</span><span>商业街卖场</span></p>
+                        <p>
+                          <span><strong>35</strong>m<sup name="">2</sup></span>
+                          <span><strong>14000</strong>元/月</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="item-store media">
+                      <div class="media-body">
+                        <h4 class="media-heading">石林百货 直招餐饮 50m²火热招商</h4>
+                        <p><strong>[出租]</strong><span>白下 光华路</span><span>商业街卖场</span><span>餐馆</span></p>
+                        <p>
+                          <span><strong>50</strong>m<sup name="">2</sup></span>
+                          <span>面议</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="item-store media">
+                      <div class="media-body">
+                        <h4 class="media-heading">铁心桥 翠岭银河农贸市场 肉铺 商业街卖场低价出租</h4>
+                        <p><strong>[出租]</strong><span>白下 光华路</span><span>商业街卖场</span><span>餐馆</span></p>
+                        <p>
+                          <span><strong>35</strong>m<sup name="">2</sup></span>
+                          <span><strong>14000</strong>元/月</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="item-store media">
+                      <div class="media-body">
+                        <h4 class="media-heading">石林百货 直招餐饮 50m²火热招商</h4>
+                        <p><strong>[出租]</strong><span>白下 光华路</span><span>商业街卖场</span><span>餐馆</span></p>
+                        <p>
+                          <span><strong>50</strong>m<sup name="">2</sup></span>
+                          <span>面议</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="item-store media">
+                      <div class="media-body">
+                        <h4 class="media-heading">铁心桥 翠岭银河农贸市场 肉铺 商业街卖场低价出租</h4>
+                        <p><strong>[出租]</strong><span>白下 光华路</span><span>商业街卖场</span><span>餐馆</span></p>
+                        <p>
+                          <span><strong>35</strong>m<sup name="">2</sup></span>
+                          <span><strong>14000</strong>元/月</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="item-store media">
+                      <div class="media-body">
+                        <h4 class="media-heading">石林百货 直招餐饮 50m²火热招商</h4>
+                        <p><strong>[出租]</strong><span>白下 光华路</span><span>商业街卖场</span><span>餐馆</span></p>
+                        <p>
+                          <span><strong>50</strong>m<sup name="">2</sup></span>
+                          <span>面议</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="carousel-caption">
+                <div class="list row">
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="item-store media">
+                      <div class="media-body">
+                        <h4 class="media-heading">鼓楼广场中心地段黄金门面招租</h4>
+                        <p><strong>[出租]</strong><span>鼓楼 鼓楼周边</span><span>商业街卖场</span></p>
+                        <p>
+                          <span><strong>35</strong>m<sup name="">2</sup></span>
+                          <span><strong>14000</strong>元/月</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="item-store media">
+                      <div class="media-body">
+                        <h4 class="media-heading">石林百货 直招餐饮 50m²火热招商</h4>
+                        <p><strong>[出租]</strong><span>白下 光华路</span><span>商业街卖场</span><span>餐馆</span></p>
+                        <p>
+                          <span><strong>50</strong>m<sup name="">2</sup></span>
+                          <span>面议</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="item-store media">
+                      <div class="media-body">
+                        <h4 class="media-heading">铁心桥 翠岭银河农贸市场 肉铺 商业街卖场低价出租</h4>
+                        <p><strong>[出租]</strong><span>白下 光华路</span><span>商业街卖场</span><span>餐馆</span></p>
+                        <p>
+                          <span><strong>35</strong>m<sup name="">2</sup></span>
+                          <span><strong>14000</strong>元/月</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="item-store media">
+                      <div class="media-body">
+                        <h4 class="media-heading">石林百货 直招餐饮 50m²火热招商</h4>
+                        <p><strong>[出租]</strong><span>白下 光华路</span><span>商业街卖场</span><span>餐馆</span></p>
+                        <p>
+                          <span><strong>50</strong>m<sup name="">2</sup></span>
+                          <span>面议</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="item-store media">
+                      <div class="media-body">
+                        <h4 class="media-heading">铁心桥 翠岭银河农贸市场 肉铺 商业街卖场低价出租</h4>
+                        <p><strong>[出租]</strong><span>白下 光华路</span><span>商业街卖场</span><span>餐馆</span></p>
+                        <p>
+                          <span><strong>35</strong>m<sup name="">2</sup></span>
+                          <span><strong>14000</strong>元/月</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="item-store media">
+                      <div class="media-body">
+                        <h4 class="media-heading">石林百货 直招餐饮 50m²火热招商</h4>
+                        <p><strong>[出租]</strong><span>白下 光华路</span><span>商业街卖场</span><span>餐馆</span></p>
+                        <p>
+                          <span><strong>50</strong>m<sup name="">2</sup></span>
+                          <span>面议</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ok">
+        <h3>最新成交</h3>
+        <div id="deal" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#deal" data-slide-to="0" class="active"></li>
+            <li data-target="#deal" data-slide-to="1"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <div class="carousel-caption">
+                <div class="list">
+                  <ul>
+                    <li><a href="javascript:;">
+                        <strong>董先生</strong>奶茶店
+                        <small>已转让</small>
+                        <span class="time">刚刚</span>
+                      </a></li>
+                    <li><a href="javascript:;">
+                        <strong>邓先生</strong>餐饮店
+                        <small>已转让</small>
+                        <span class="time">今天</span>
+                      </a></li>
+                    <li><a href="javascript:;">
+                        <strong>张先生</strong>服装店
+                        <small>已转让</small>
+                        <span class="time">今天</span>
+                      </a></li>
+                    <li><a href="javascript:;">
+                        <strong>傅先生</strong>冷饮店
+                        <small>已出租</small>
+                        <span class="time">昨天</span>
+                      </a></li>
+                    <li><a href="javascript:;">
+                        <strong>董先生</strong>奶茶店
+                        <small>已转让</small>
+                        <span class="time">刚刚</span>
+                      </a></li>
+                    <li><a href="javascript:;">
+                        <strong>江女士/李先生</strong>理发店
+                        <small>已转让</small>
+                        <span class="time">3天前</span>
+                      </a></li>
+                    <li><a href="javascript:;">
+                        <strong>夏先生</strong>美容店
+                        <small>已转让</small>
+                        <span class="time">2016.09.27</span>
+                      </a></li>
+                    <li><a href="javascript:;">
+                        <strong>张先生</strong>理发店
+                        <small>已转让</small>
+                        <span class="time">2016.09.22</span>
+                      </a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="carousel-caption">
+                <div class="list">
+                  <ul>
+                    <li><a href="javascript:;">
+                        <strong>董先生</strong>奶茶店
+                        <small>已转让</small>
+                        <span class="time">刚刚</span>
+                      </a></li>
+                    <li><a href="javascript:;">
+                        <strong>邓先生</strong>餐饮店
+                        <small>已转让</small>
+                        <span class="time">今天</span>
+                      </a></li>
+                    <li><a href="javascript:;">
+                        <strong>张先生</strong>服装店
+                        <small>已转让</small>
+                        <span class="time">今天</span>
+                      </a></li>
+                    <li><a href="javascript:;">
+                        <strong>傅先生</strong>冷饮店
+                        <small>已出租</small>
+                        <span class="time">昨天</span>
+                      </a></li>
+                    <li><a href="javascript:;">
+                        <strong>董先生</strong>奶茶店
+                        <small>已转让</small>
+                        <span class="time">刚刚</span>
+                      </a></li>
+                    <li><a href="javascript:;">
+                        <strong>江女士/李先生</strong>理发店
+                        <small>已转让</small>
+                        <span class="time">3天前</span>
+                      </a></li>
+                    <li><a href="javascript:;">
+                        <strong>夏先生</strong>美容店
+                        <small>已转让</small>
+                        <span class="time">2016.09.27</span>
+                      </a></li>
+                    <li><a href="javascript:;">
+                        <strong>张先生</strong>理发店
+                        <small>已转让</small>
+                        <span class="time">2016.09.22</span>
+                      </a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="lease" class="index-lease container">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <h3><strong>热门出租</strong><small>Popular rental</small></h3>
+          <div class="list">
+            <div class="item-store media">
+              <div class="media-left"><img src="img/store-pic.jpg" alt=""></div>
+              <div class="media-body">
+                <h4 class="media-heading">鼓楼广场中心地段黄金门面招租</h4>
+                <p><strong>[出租]</strong><span>鼓楼 鼓楼周边</span><span>商业街卖场</span></p>
+                <p>
+                  <span><strong>35</strong>m<sup name="">2</sup></span>
+                  <span><strong>14000</strong>元/月</span>
+                </p>
+              </div>
+            </div>
+            <ol>
+              <li>
+                <span><strong>31</strong>m<sup>2</sup></span>
+                <a href="javascript:;">大厂区杨庄卸甲甸地铁口空铺出售</a>
+              </li>
+              <li>
+                <span><strong>211</strong>m<sup>2</sup></span>
+                <a href="javascript:;">江宁学校门口新铺出售</a>
+              </li>
+              <li>
+                <span><strong>45</strong>m<sup>2</sup></span>
+                <a href="javascript:;">夫子庙三山街地铁口旺铺出售</a>
+              </li>
+              <li>
+                <span><strong>56</strong>m<sup>2</sup></span>
+                <a href="javascript:;">秦淮闹市区黄金旺铺出售</a>
+              </li>
+              <li>
+                <span><strong>31</strong>m<sup>2</sup></span>
+                <a href="javascript:;">新街口服装门面出售</a>
+              </li>
+              <li>
+                <span><strong>23</strong>m<sup>2</sup></span>
+                <a href="javascript:;">浦口地铁口旺铺出售</a>
+              </li>
+              <li>
+                <span><strong>23</strong>m<sup>2</sup></span>
+                <a href="javascript:;">新街口商务楼附近临街门面出售</a>
+              </li>
+              <li>
+                <span><strong>79</strong>m<sup>2</sup></span>
+                <a href="javascript:;">厂区附近旺铺出售适合各行</a>
+              </li>
+              <li>
+                <span><strong>31</strong>m<sup>2</sup></span>
+                <a href="javascript:;">河海江宁校区西门金智路丹佛出售</a>
+              </li>
+              <li>
+                <span><strong>41</strong>m<sup>2</sup></span>
+                <a href="javascript:;">大厂区杨庄卸甲甸地铁口空铺出售</a>
+              </li>
+            </ol>
+          </div>
+          <div class="term">
+            <span class="label label-default">玄武门</span>
+            <span class="label label-default">雨花台</span>
+            <span class="label label-default">美容美发</span>
+            <span class="label label-default">百货超市</span>
+            <span class="label label-default">20-50m<sup>2</sup></span>
+            <span class="label label-default">100-120m<sup>2</sup></span>
+            <span class="label label-default">美容美发</span>
+            <span class="label label-default">百货超市</span>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <h3><strong>热门出售</strong><small>Hot sale</small></h3>
+          <div class="list">
+            <div class="item-store media">
+              <div class="media-left"><img src="img/store-pic.jpg" alt=""></div>
+              <div class="media-body">
+                <h4 class="media-heading">鼓楼广场中心地段黄金门面招租</h4>
+                <p><strong>[出租]</strong><span>鼓楼 鼓楼周边</span><span>商业街卖场</span></p>
+                <p>
+                  <span><strong>35</strong>m<sup name="">2</sup></span>
+                  <span><strong>14000</strong>元/月</span>
+                </p>
+              </div>
+            </div>
+            <ol>
+              <li>
+                <span><strong>31</strong>m<sup>2</sup></span>
+                <a href="javascript:;">大厂区杨庄卸甲甸地铁口空铺出售</a>
+              </li>
+              <li>
+                <span><strong>211</strong>m<sup>2</sup></span>
+                <a href="javascript:;">江宁学校门口新铺出售</a>
+              </li>
+              <li>
+                <span><strong>45</strong>m<sup>2</sup></span>
+                <a href="javascript:;">夫子庙三山街地铁口旺铺出售</a>
+              </li>
+              <li>
+                <span><strong>56</strong>m<sup>2</sup></span>
+                <a href="javascript:;">秦淮闹市区黄金旺铺出售</a>
+              </li>
+              <li>
+                <span><strong>31</strong>m<sup>2</sup></span>
+                <a href="javascript:;">新街口服装门面出售</a>
+              </li>
+              <li>
+                <span><strong>23</strong>m<sup>2</sup></span>
+                <a href="javascript:;">浦口地铁口旺铺出售</a>
+              </li>
+              <li>
+                <span><strong>29</strong>m<sup>2</sup></span>
+                <a href="javascript:;"><span>新街口商务楼附近临街门面出售新街口商务楼附近临街门面出售</span></a>
+              </li>
+              <li>
+                <span><strong>79</strong>m<sup>2</sup></span>
+                <a href="javascript:;">厂区附近旺铺出售适合各行</a>
+              </li>
+              <li>
+                <span><strong>31</strong>m<sup>2</sup></span>
+                <a href="javascript:;">河海江宁校区西门金智路丹佛出售</a>
+              </li>
+              <li>
+                <span><strong>41</strong>m<sup>2</sup></span>
+                <a href="javascript:;">大厂区杨庄卸甲甸地铁口空铺出售</a>
+              </li>
+            </ol>
+          </div>
+          <div class="term">
+            <span class="label label-default">玄武门</span>
+            <span class="label label-default">雨花台</span>
+            <span class="label label-default">美容美发</span>
+            <span class="label label-default">百货超市</span>
+            <span class="label label-default">20-50m<sup>2</sup></span>
+            <span class="label label-default">100-120m<sup>2</sup></span>
+            <span class="label label-default">美容美发</span>
+            <span class="label label-default">百货超市</span>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <h3><strong>推荐招商</strong><small>Recommended investment</small></h3>
+          <div class="list">
+            <div class="item-store media">
+              <div class="media-left"><img src="img/store-pic.jpg" alt=""></div>
+              <div class="media-body">
+                <h4 class="media-heading">鼓楼广场中心地段黄金门面招租</h4>
+                <p><strong>[出租]</strong><span>鼓楼 鼓楼周边</span><span>商业街卖场</span></p>
+                <p>
+                  <span><strong>35</strong>m<sup name="">2</sup></span>
+                  <span><strong>14000</strong>元/月</span>
+                </p>
+              </div>
+            </div>
+            <ol>
+              <li>
+                <a href="javascript:;">大厂区杨庄卸甲甸地铁口空铺出售</a>
+              </li>
+              <li>
+                <a href="javascript:;">江宁学校门口新铺出售</a>
+              </li>
+              <li>
+                <a href="javascript:;">夫子庙三山街地铁口旺铺出售</a>
+              </li>
+              <li>
+                <a href="javascript:;">秦淮闹市区黄金旺铺出售</a>
+              </li>
+              <li>
+                <a href="javascript:;">新街口服装门面出售</a>
+              </li>
+              <li>
+                <a href="javascript:;">浦口地铁口旺铺出售</a>
+              </li>
+              <li>
+                <a href="javascript:;">新街口商务楼附近临街门面出售</a>
+              </li>
+              <li>
+                <a href="javascript:;">厂区附近旺铺出售适合各行</a>
+              </li>
+              <li>
+                <a href="javascript:;">河海江宁校区西门金智路丹佛出售</a>
+              </li>
+              <li>
+                <a href="javascript:;">大厂区杨庄卸甲甸地铁口空铺出售</a>
+              </li>
+            </ol>
+          </div>
+          <div class="term">
+            <span class="label label-default">玄武门</span>
+            <span class="label label-default">雨花台</span>
+            <span class="label label-default">美容美发</span>
+            <span class="label label-default">百货超市</span>
+            <span class="label label-default">20-50m<sup>2</sup></span>
+            <span class="label label-default">100-120m<sup>2</sup></span>
+            <span class="label label-default">美容美发</span>
+            <span class="label label-default">百货超市</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="other" class="index-other container">
+      <h3 class="text-center"><small>以下信息为网友发布请自行核对资料的真实性</small></h3>
+      <div class="list row">
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+          <div class="item-store media">
+            <div class="media-body">
+              <h4 class="media-heading">体彩福彩双彩点转让</h4>
+              <p>
+                <strong>[转让]</strong>
+                <span>秦淮区</span>
+                <span>35m<sup>2</sup></span>
+                <span>孙林</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+          <div class="item-store media">
+            <div class="media-body">
+              <h4 class="media-heading">体彩福彩双彩点转让</h4>
+              <p>
+                <strong>[转让]</strong>
+                <span>秦淮区</span>
+                <span>35m<sup>2</sup></span>
+                <span>孙林</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+          <div class="item-store media">
+            <div class="media-body">
+              <h4 class="media-heading">体彩福彩双彩点转让</h4>
+              <p>
+                <strong>[转让]</strong>
+                <span>秦淮区</span>
+                <span>35m<sup>2</sup></span>
+                <span>孙林</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+          <div class="item-store media">
+            <div class="media-body">
+              <h4 class="media-heading">体彩福彩双彩点转让</h4>
+              <p>
+                <strong>[转让]</strong>
+                <span>秦淮区</span>
+                <span>35m<sup>2</sup></span>
+                <span>孙林</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+          <div class="item-store media">
+            <div class="media-body">
+              <h4 class="media-heading">体彩福彩双彩点转让</h4>
+              <p>
+                <strong>[转让]</strong>
+                <span>秦淮区</span>
+                <span>35m<sup>2</sup></span>
+                <span>孙林</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+          <div class="item-store media">
+            <div class="media-body">
+              <h4 class="media-heading">体彩福彩双彩点转让</h4>
+              <p>
+                <strong>[转让]</strong>
+                <span>秦淮区</span>
+                <span>35m<sup>2</sup></span>
+                <span>孙林</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+          <div class="item-store media">
+            <div class="media-body">
+              <h4 class="media-heading">体彩福彩双彩点转让</h4>
+              <p>
+                <strong>[转让]</strong>
+                <span>秦淮区</span>
+                <span>35m<sup>2</sup></span>
+                <span>孙林</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+          <div class="item-store media">
+            <div class="media-body">
+              <h4 class="media-heading">体彩福彩双彩点转让</h4>
+              <p>
+                <strong>[转让]</strong>
+                <span>秦淮区</span>
+                <span>35m<sup>2</sup></span>
+                <span>孙林</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+          <div class="item-store media">
+            <div class="media-body">
+              <h4 class="media-heading">体彩福彩双彩点转让</h4>
+              <p>
+                <strong>[转让]</strong>
+                <span>秦淮区</span>
+                <span>35m<sup>2</sup></span>
+                <span>孙林</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+          <div class="item-store media">
+            <div class="media-body">
+              <h4 class="media-heading">体彩福彩双彩点转让</h4>
+              <p>
+                <strong>[转让]</strong>
+                <span>秦淮区</span>
+                <span>35m<sup>2</sup></span>
+                <span>孙林</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+          <div class="item-store media">
+            <div class="media-body">
+              <h4 class="media-heading">体彩福彩双彩点转让</h4>
+              <p>
+                <strong>[转让]</strong>
+                <span>秦淮区</span>
+                <span>35m<sup>2</sup></span>
+                <span>孙林</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+          <div class="item-store media">
+            <div class="media-body">
+              <h4 class="media-heading">体彩福彩双彩点转让</h4>
+              <p>
+                <strong>[转让]</strong>
+                <span>秦淮区</span>
+                <span>35m<sup>2</sup></span>
+                <span>孙林</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <div id="footer" class="container-fluid">
+      <div class="con container">
+        <div class="service row">
+          <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+            <i></i>
+            <strong>个性化定制</strong>
+            <p><small>一铺一方案，全方案定制</small><small>充分满足每个客户的实际需求</small></p>
+          </div>
+          <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+            <i></i>
+            <strong>专业服务</strong>
+            <p><small>专注店铺转让业务6年+</small><small>专业服务团队，资深服务专员</small></p>
+          </div>
+          <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+            <i></i>
+            <strong>高性价比</strong>
+            <p><small>服务全程价格透明</small><small>第三方免费监督与投诉</small></p>
+          </div>
+          <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+            <i></i>
+            <strong>绝佳体验</strong>
+            <p><small>特色快转服务，全程跟踪服务</small><small>成功转让是我们的服务终点</small></p>
+          </div>
+        </div>
+        <div class="copy row">
+          <div class="col-sm-7 col-md-7 col-lg-7">
+            <ul class="list-inline">
+              <li><a href="javascript:;">关于我们</a></li>
+              <li><a href="javascript:;">团队介绍</a></li>
+              <li><a href="javascript:;">品牌合作</a></li>
+              <li><a href="javascript:;">服务协议</a></li>
+            </ul>
+            <p>CopyRight   &copy;  2016-2017<a href="http://www.NJTPW.COM">腾铺网  NJTPW.COM</a>苏ICP备08121436号</p>
+          </div>
+          <div class="col-sm-5 col-md-5 col-lg-5 text-right">
+            <a href="javascript:;" class="btn btn-match btn-lg"><i class="fa fa-qq"></i>在线业务咨询</a>
+            <span><i class="fa fa-mobile-phone"></i>025-52260598</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

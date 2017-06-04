@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>发布信息</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+  </head>
+  <body>
+    <div id="top" class="index container-fluid">
+      <div class="con container">
+        <a href="javascript:;" class="visible-xs-block"><i class="fa fa-reorder"></i></a>
+        <ul class="list-inline hidden-xs">
+          <li><a href="default.htm">主站</a></li>
+          <li><a href="index.htm">分站首页</a></li>
+          <li><a href="">商铺转让</a></li>
+          <li><a href="">商铺租售</a></li>
+          <li><a href="">写字楼</a></li>
+          <li><a href="">厂房仓库</a></li>
+          <li><a href="">求租求购</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="header" class="index container-fluid">
+      <div class="con container">
+        <div class="row">
+          <div class="col-md-8 col-lg-8">
+            <a href="default.htm" title="南京腾铺" class="logo"><img src="img/default-logo.jpg"/></a>
+            <div class="dropdown area">
+              <button class="btn btn-default dropdown-toggle btn-lg" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                南京
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">杭州</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">成都</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">无锡</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">北京</a></li>
+              </ul>
+            </div>
+            <div class="input-group input-group-lg search">
+              <input type="text" class="form-control">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+              </span>
+            </div>
+          </div>
+          <div class="text-right col-md-4 col-lg-4">
+            <a href="publish.htm" class="btn btn-default">免费发布信息</a>
+            <a href="" class="btn btn-theme-line">登录</a>
+            <a href="register.htm" class="btn btn-link">注册</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid form-con" id="publish">
+      <h2><strong class="container">免费发布信息</strong></h2> 
+      <ol class="step container">
+        <li>
+          <i>1</i>
+          <strong>选择类型</strong>
+        </li>
+        <li>
+          <i>2</i>
+          <strong>选择区域</strong>
+        </li>
+        <li class="active">
+          <i>3</i>
+          <strong>详细信息</strong>
+        </li>
+      </ol>
+      <div class="container more">
+        <div class="selected">
+          <span>商铺转让</span>
+          <span>摊位柜台</span>
+          <span>鼓楼区,1号地铁-锡北运河,欧风街商圈</span>
+        </div>
+
+        <div class="form-horizontal">
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-3 control-label">信息标题：</label>
+            <div class="col-sm-6">
+              <div class="input-group">
+                <span class="input-group-addon" id="sizing-addon2">转让</span>
+                <input type="text" class="form-control" id="inputEmail3" placeholder="信息标题">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-3 control-label">所属行业：</label>
+            <div class="col-sm-3">
+              <select class="form-control">
+                <option>选择行业</option>
+                <option>酒楼餐饮</option>
+                <option>美容美发</option>
+                <option>服饰鞋包</option>
+                <option>专柜转让</option>
+                <option>休闲娱乐</option>
+                <option>百货超市</option>
+                <option>生活服务</option>
+                <option>电子通讯</option>
+                <option>汽修美容</option>
+                <option>医药保健</option>
+                <option>家居建材</option>
+                <option>教育培训</option>
+                <option>旅馆宾馆</option>
+                <option>公司工厂</option>
+                <option>其他</option>
+              </select>
+            </div>
+            <div class="col-sm-3">
+              <select class="form-control">
+                <option>选择子行业</option>
+                <option>面包店</option>
+                <option>熟食店</option>
+                <option>食堂</option>
+                <option>餐馆</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-3 control-label">商铺地址：</label>
+            <div class="col-sm-3">
+              <select class="form-control">
+                <option>选择路段</option>
+                <option>中山路</option>
+                <option>人民东路</option>
+                <option>人民中路</option>
+                <option>人民西路</option>
+                <option>县前东街</option>
+                <option>县前西街</option>
+                <option>学前街</option>
+                <option>解放东路</option>
+                <option>解放南路</option>
+                <option>解放中路</option>
+                <option>勤学路</option>
+                <option>南长街</option>
+                <option>新生路</option>
+                <option>学前东路</option>
+                <option>崇宁路</option>
+                <option>后西溪</option>
+              </select>
+            </div>
+            <div class="col-sm-3">
+              <input type="text" class="form-control" id="inputEmail3" placeholder="地标性说明">
+            </div>
+            <div class="col-sm-6 col-sm-offset-3">
+              <span class="tip">地标性说明，如苏宁广场东侧、淮海路与中山南路路口...</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-xs-4 col-sm-3 control-label">是否空转：</label>
+            <div class="col-xs-8 col-sm-6">
+              <label class="radio-inline">
+                <input name="empty" type="radio" id="inlineCheckbox1" value="option1"> 是
+              </label>
+              <label class="radio-inline">
+                <input name="empty" type="radio" id="inlineCheckbox1" value="option1"> 否
+              </label>
+            </div>
+          </div>
+          <hr/>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-xs-4 col-sm-3 control-label">商铺面积：</label>
+            <div class="col-xs-8 col-sm-3">
+              <div class="input-group">
+                <input type="text" class="form-control" id="inputEmail3" placeholder="0">
+                <span class="input-group-addon" id="sizing-addon2">m<sup>2</sup></span>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-xs-4 col-sm-3 control-label">商铺租金：</label>
+            <div class="col-xs-8 col-sm-3">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="0">
+                <div class="input-group-btn">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">元/月 <span class="caret"></span></button>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="#">元/m<sup>2</sup>/天</a></li>
+                  </ul>
+                </div><!-- /btn-group -->
+              </div><!-- /input-group -->
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-xs-4 col-sm-3 control-label">转让费：</label>
+            <div class="col-xs-8 col-sm-6 line">
+              <label class="checkbox-inline">
+                <input name="empty-2" type="checkbox" id="inlineCheckbox1" value="option1"> 面议
+              </label>
+            </div>
+            <div class="col-sm-3 col-sm-offset-3">
+              <div class="input-group">
+                <input type="text" class="form-control" id="inputEmail3" placeholder="0">
+                <span class="input-group-addon" id="sizing-addon2">万元</span>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="input-group">
+                <span class="input-group-addon" id="sizing-addon2">±</span>
+                <input type="text" class="form-control" id="inputEmail3" placeholder="0">
+                <span class="input-group-addon" id="sizing-addon2">万元</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-3 control-label">详细介绍：</label>
+            <div class="col-sm-6">
+              <textarea class="form-control" rows="8" placeholder="请输入300字以内的文字介绍"></textarea>
+            </div>
+            <div class="col-sm-6 col-sm-offset-3">
+              <ul class="list-inline">
+                <li style="background-image:url(img/1.jpg);"><a href="javascript:;"><i class="fa fa-trash-o"></i></a></li>
+                <li style="background-image:url(img/2.jpg);"><a href="javascript:;"><i class="fa fa-trash-o"></i></a></li>
+                <li class="add">
+                  <div class="fileinput fileinput-new" data-provides="fileinput">
+                    <span class="btn btn-default btn-file btn-sm"><span class="fileinput-new"><i class="fa fa-plus"></i></span>
+                    <input id="cpp_image_pics" type="file" name="images" multiple="multiple" v-model="pics.files" accept="image/png,image/gif,image/jpg,image/jpeg"/></span>
+                    <!--<span class="fileinput-filename"></span>
+                    <a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">×</a>-->
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-sm-offset-3">
+              <span class="tip">您可上传最少1张，最多6张图片，尺寸：600*450px，默认第一张为封面图片。</span>
+            </div>
+          </div>
+          <hr/>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-xs-4 col-sm-3 control-label">您的身份：</label>
+            <div class="col-xs-8 col-sm-6">
+              <label class="radio-inline">
+                <input name="identity" type="radio" id="inlineCheckbox1" value="option1"> 业主
+              </label>
+              <label class="radio-inline">
+                <input name="identity" type="radio" id="inlineCheckbox1" value="option1"> 房东
+              </label>
+              <label class="radio-inline">
+                <input name="identity" type="radio" id="inlineCheckbox1" value="option1"> 中介
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-xs-4 col-sm-3 control-label">联系方式：</label>
+            <div class="col-xs-8 col-sm-6 line">
+              <label class="checkbox-inline">
+                <input name="contact" type="checkbox" id="inlineCheckbox1" value="option1"> 默认方式
+              </label>
+            </div>
+            <div class="col-sm-3 col-sm-offset-3">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="联系人">
+                <div class="input-group-btn">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">女士 <span class="caret"></span></button>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="#">先生</a></li>
+                  </ul>
+                </div><!-- /btn-group -->
+              </div><!-- /input-group -->
+            </div>
+            <div class="col-sm-3">
+              <input type="text" class="form-control" placeholder="手机或固话">
+            </div>
+          </div>
+        </div>
+          
+        <div class="main-do">
+            <button type="submit" class="btn btn-match" onclick="javascript:window.location.href='publish-02.htm'">上一步</button>
+            <button type="submit" class="btn btn-theme" onclick="javascript:window.location.href='publish-04.htm'">确认发布</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer" class="container-fluid">
+      <div class="con container">
+        <div class="service row">
+          <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+            <i></i>
+            <strong>个性化定制</strong>
+            <p><small>一铺一方案，全方案定制</small><small>充分满足每个客户的实际需求</small></p>
+          </div>
+          <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+            <i></i>
+            <strong>专业服务</strong>
+            <p><small>专注店铺转让业务6年+</small><small>专业服务团队，资深服务专员</small></p>
+          </div>
+          <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+            <i></i>
+            <strong>高性价比</strong>
+            <p><small>服务全程价格透明</small><small>第三方免费监督与投诉</small></p>
+          </div>
+          <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+            <i></i>
+            <strong>绝佳体验</strong>
+            <p><small>特色快转服务，全程跟踪服务</small><small>成功转让是我们的服务终点</small></p>
+          </div>
+        </div>
+        <div class="copy row">
+          <div class="col-sm-7 col-md-7 col-lg-7">
+            <ul class="list-inline">
+              <li><a href="javascript:;">关于我们</a></li>
+              <li><a href="javascript:;">团队介绍</a></li>
+              <li><a href="javascript:;">品牌合作</a></li>
+              <li><a href="javascript:;">服务协议</a></li>
+            </ul>
+            <p>CopyRight   &copy;  2016-2017<a href="http://www.NJTPW.COM">腾铺网  NJTPW.COM</a>苏ICP备08121436号</p>
+          </div>
+          <div class="col-sm-5 col-md-5 col-lg-5 text-right">
+            <a href="javascript:;" class="btn btn-match btn-lg"><i class="fa fa-qq"></i>在线业务咨询</a>
+            <span><i class="fa fa-mobile-phone"></i>025-52260598</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

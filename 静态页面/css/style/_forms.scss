@@ -1,0 +1,26 @@
+
+.form-control {
+  @include border-radius($input-border-radius);
+  // Customize the `:focus` state to imitate native WebKit styles.
+  @include form-control-focus;
+
+  // [converter] extracted textarea& to textarea.form-control
+}
+textarea.form-control {@include border-radius($border-radius-base);}
+
+.form-group{
+	.tip{
+		font-size:75%;color:rgba($brand-dark,.6);
+	}
+	[class^="-offset-"],
+	[class*="-offset-"],
+	[class^="-offset-"]~div,
+	[class*="-offset-"]~div{margin-top:10px;}
+	@media(max-width:767px){
+		[class^="col-"],
+		[class*="col-"]{margin-top:10px;}
+	}
+}
+@media(max-width:767px){
+	.form-horizontal{padding:0 20px;}
+}
